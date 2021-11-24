@@ -166,7 +166,7 @@ while True:
             print("Traffic TWO is GREEN ")
         if Counter2 >0:
             print("Traffic THREE IS GREEN")
-        if Counter>0:
+        if Counter3>0:
             print("Traffic Four is GREEN")
 
 
