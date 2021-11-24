@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 frameWidth = 640
-frameHeight = 1280
+frameHeight = 480
 cap = cv2.VideoCapture(0)
 cap1 = cv2.VideoCapture(1)
 cap2 = cv2.VideoCapture(2)
@@ -11,6 +11,14 @@ cap3 = cv2.VideoCapture(3)
 cap.set(3,frameWidth)
 cap.set(4,frameHeight)
 
+cap1.set(3,frameWidth)
+cap1.set(4,frameHeight)
+
+cap2.set(3,frameWidth)
+cap2.set(4,frameHeight)
+
+cap3.set(3,frameWidth)
+cap3.set(4,frameHeight)
 #GET CONTOURS AND NUMBER OF CARS FOR TRAFFIC ONE
 def getContours(img, imgContours):
     contours, hierarchy = cv2.findContours(img, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
